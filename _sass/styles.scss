@@ -5,26 +5,77 @@ footer { padding: 0 0 0 }
 
 footer .copyright {margin-bottom: 40px;}
 
-header.masthead {background-color: #1b1f3b; }
+header.masthead {background-color: white; }
 
-header.masthead .overlay {background-color: #1b1f3b; }
+header.masthead .overlay {background-color: white; }
 
-/*
+header.masthead .page-heading, header.masthead .post-heading, header.masthead .site-heading { padding: 150px 0 20px; color: black; }
 
-#mainNav { position: absolute; border-bottom: 1px solid #e9ecef; background-color: white; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+#mainNav { position: absolute; border-bottom: 1px solid #2B4664; background-color: #2B4664; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
-#mainNav .navbar-brand { font-weight: 800; color: #343a40; }
+#mainNav .navbar-brand { font-weight: 800; color: rgba(255,255,255,.9); }
 
-#mainNav .navbar-toggler { font-size: 12px; font-weight: 800; padding: 13px; text-transform: uppercase; color: #343a40; }
+#mainNav .navbar-toggler { font-size: 12px; font-weight: 800; padding: 13px; text-transform: uppercase; color: rgba(255,255,255,.6); }
 
 #mainNav .navbar-nav > li.nav-item > a { font-size: 12px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; }
 
-@media only screen and (min-width: 992px) { #mainNav { border-bottom: 1px solid transparent; background: transparent; } #mainNav .navbar-brand { padding: 10px 20px; color: #212529; } #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover { color: #0085A1; } #mainNav .navbar-nav > li.nav-item > a { padding: 10px 20px; color: #212529; } #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover { color: #0085A1; } }
+@media only screen and (min-width: 992px) { #mainNav { border-bottom: 1px solid transparent; /* background: transparent; */} #mainNav .navbar-brand { padding: 10px 20px; color: rgba(255,255,255,.9); } #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover { color: white; } #mainNav .navbar-nav > li.nav-item > a { padding: 10px 20px; color: rgba(255,255,255,.6); } #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover { color: white; } }
 
-@media only screen and (min-width: 992px) { #mainNav { -webkit-transition: background-color 0.2s; -moz-transition: background-color 0.2s; transition: background-color 0.2s; -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -o-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); -webkit-backface-visibility: hidden; } #mainNav.is-fixed {  position: fixed; top: -67px; -webkit-transition: -webkit-transform 0.2s; -moz-transition: -moz-transform 0.2s; transition: transform 0.2s; border-bottom: 1px solid white; background-color: rgba(255, 255, 255, 0.9); } #mainNav.is-fixed .navbar-brand { color: #212529; } #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover { color: #0085A1; } #mainNav.is-fixed .navbar-nav > li.nav-item > a { color: #212529; } #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover { color: #0085A1; } #mainNav.is-visible { -webkit-transform: translate3d(0, 100%, 0); -moz-transform: translate3d(0, 100%, 0); -ms-transform: translate3d(0, 100%, 0); -o-transform: translate3d(0, 100%, 0); transform: translate3d(0, 100%, 0); } }
+@media only screen and (min-width: 992px) { #mainNav { -webkit-transition: background-color 0.2s; -moz-transition: background-color 0.2s; transition: background-color 0.2s; -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -o-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); -webkit-backface-visibility: hidden; } #mainNav.is-fixed {  position: fixed; top: -67px; -webkit-transition: -webkit-transform 0.2s; -moz-transition: -moz-transform 0.2s; transition: transform 0.2s; border-bottom: 0; background-color: #2B4664; } #mainNav.is-fixed .navbar-brand { color: rgba(255,255,255,.9); } #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover { color: #ccd6f6; } #mainNav.is-fixed .navbar-nav > li.nav-item > a { color: rgba(255,255,255,.6); } #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover { color: white; } #mainNav.is-visible { -webkit-transform: translate3d(0, 100%, 0); -moz-transform: translate3d(0, 100%, 0); -ms-transform: translate3d(0, 100%, 0); -o-transform: translate3d(0, 100%, 0); transform: translate3d(0, 100%, 0); } }
 
-header.masthead .page-heading, header.masthead .post-heading, header.masthead .site-heading { padding: 200px 0 150px; color: #212529; }
+//Home changes
 
-*/
+#intro { text-align: left; }
+
+#homename { text-align: left; width: -moz-fit-content;
+  width: fit-content; }
+
+#homename {
+  border-right: solid 3px rgba(43, 70, 100, .75);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Animation */
+#homename {
+  animation: animated-text 1s steps(29,end) 1s 1 normal both,
+             animated-cursor 600ms steps(29,end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from { max-width: 0; }
+  to { max-width: 100%; }
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: rgba(43, 70, 100,.75);}
+  to{border-right-color: transparent;}
+}
+
+#mastheadhome {
+	padding: 0px 0 100px;
+	min-height: 100%;
+	min-height: 100vh;      
+	display: flex;
+	align-items: center; }
+
+//button changes
+
+.btn-primary { background-color: #2B4664; border-color: #2B4664; }
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active { color: #fff; background-color: #1D2E42 !important; border-color: #1D2E42 !important; }
+
+//article preview
+
+.post-preview > a { color: #212529; }
+.post-preview > a:focus, .post-preview > a:hover {color: #2B4664; }
+.post-preview > .post-meta { color: #868e96; }
+.post-preview > .post-meta > a { color: #212529; }
+.post-preview > .post-meta > a:focus, .post-preview > .post-meta > a:hover {color: #2B4664; }
+
+//header.masthead .page-heading, header.masthead .post-heading, header.masthead .site-heading { padding: 200px 0 150px; color: #212529; }
 
 
