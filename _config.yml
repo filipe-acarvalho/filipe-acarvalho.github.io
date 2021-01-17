@@ -1,5 +1,5 @@
 title:              Filipe Carvalho 
-email:              filipe.c.eec@gmail.com
+email:              
 description:        O meu espaço pessoal
 author:             Filipe Carvalho
 baseurl:            ""
@@ -13,7 +13,7 @@ instagram_username:
 linkedin_username:
 
 # Add your google-analytics ID here to activate google analytics
-#google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
+#google_analytics:   G-RGHV2MF568
 
 # Build settings
 markdown:           kramdown
