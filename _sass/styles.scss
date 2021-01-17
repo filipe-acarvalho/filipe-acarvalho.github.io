@@ -9,7 +9,7 @@ header.masthead {background-color: white; margin-bottom: 7px;}
 
 header.masthead .overlay {background-color: white; }
 
-header.masthead .page-heading, header.masthead .post-heading, header.masthead .site-heading { padding: 150px 0 15px; color: black; }
+header.masthead .page-heading, header.masthead .post-heading, header.masthead .site-heading { padding: 120px 0 15px; color: black; }
 
 header.masthead .post-heading .meta a { color: black;}
 
@@ -73,21 +73,25 @@ header.masthead .post-heading .meta a { color: black;}
 
 .btn-primary { background-color: #2B4664; border-color: #2B4664; }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active { color: #fff; background-color: #1D2E42 !important; border-color: #1D2E42 !important; }
-.btn { border-radius: 4px; }
+.btn { border-radius: 2px; }
 
 //article preview
 
 .post-preview > a { color: #212529; }
 .post-preview > a:focus, .post-preview > a:hover {color: #2B4664; }
-.post-preview > .post-meta { color: #868e96; }
 .post-preview > .post-meta > a { color: #212529; }
 .post-preview > .post-meta > a:focus, .post-preview > .post-meta > a:hover {color: #2B4664; }
+.post-preview > .post-meta {color: #959da5; font-size: 15px; font-style: normal; font-family: SFMono-Regular,Consolas,"Liberation Mono", Menlo, "Courier New",monospace; margin-top: 14px;}
 
 //post
 
 header.masthead .post-heading .meta {color: #959da5; font-size: 17px; font-style: normal; font-family: SFMono-Regular,Consolas,"Liberation Mono", Menlo, "Courier New",monospace;}
-.post-preview > .post-meta {color: #959da5; font-size: 15px; font-style: normal; font-family: SFMono-Regular,Consolas,"Liberation Mono", Menlo, "Courier New",monospace; margin-top: 14px;}
 
-//header.masthead .page-heading, header.masthead .post-heading, header.masthead .site-heading { padding: 200px 0 150px; color: #212529; }
+//form
 
+.floating-label-form-group label, .floating-label-form-group-with-value label {color: #959da5; font-family: SFMono-Regular,Consolas,"Liberation Mono", Menlo, "Courier New",monospace;}
+.form-control::placeholder {color: #959da5;  font-family: SFMono-Regular,Consolas,"Liberation Mono", Menlo, "Courier New",monospace; }
+.floating-label-form-group input, .floating-label-form-group textarea { padding: .375rem .75rem; border: 1px solid #ced4da; border-radius: .25rem; }
+.floating-label-form-group { border-bottom: 0px; }
+.floating-label-form-group .help-block { margin: 0 0; }
 
