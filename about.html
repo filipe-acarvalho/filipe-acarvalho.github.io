@@ -1,13 +1,34 @@
 ---
 layout: page
 title: Sobre
-description: Uma breve introdução.
+description: Uma breve introdução
 ---
 
-<blockquote class="blockquote">This is the first year of the 21st century
-<footer class="blockquote-footer">Peter Thiel, Dezembro 2020</footer>
-</blockquote>
+<ul class="nav nav-tabs row justify-content-md-center" id="myTab" role="tablist">
+  <li class="nav-item col col-5" role="presentation">
+    <a class="nav-link active" id="site-tab" data-bs-toggle="tab" href="#site" role="tab" aria-controls="site" aria-selected="true">Sobre o blog</a>
+  </li>
+  <li class="nav-item col col-5" role="presentation">
+    <a class="nav-link" id="me-tab" data-bs-toggle="tab" href="#me" role="tab" aria-controls="me" aria-selected="false">Sobre mim</a>
+  </li>
+</ul>
 
-<p>Este blog tem como propósito a discussão sobre o mundo da década de 2020, a sua transformação tecnológica, a social, e os efeitos de uma na outra.</p>
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane fade show active" id="site" role="tabpanel" aria-labelledby="home-tab">
+   <blockquote class="blockquote">This is the first year of the 21st century
+    <footer class="blockquote-footer">Peter Thiel, Dezembro 2020</footer>
+   </blockquote>
 
-<p class="mb-5">Os meus pontos de atenção incluem o progresso científico e técnico, quer em bits quer em átomos, a evolução social e cultural, os acontecimentos económicos e a atualidade política nacional e internacional.</p>
+   <p>Este blog tem como propósito a discussão sobre o mundo da década de 2020, a sua transformação tecnológica, a social, e os efeitos de uma na outra.</p>
+
+   <p>Os meus pontos de atenção incluem o progresso científico e técnico, quer em bits quer em átomos, a evolução social e cultural, os acontecimentos económicos e a atualidade política nacional e internacional.</p>
+
+   <p class="mb-5">Integer ac nulla aliquet massa pellentesque pellentesque dictum in risus. Praesent sit amet suscipit quam. Sed feugiat quam in ex cursus pretium. Praesent nulla neque, consequat rhoncus metus non, pellentesque efficitur arcu. Vivamus euismod interdum venenatis. Vestibulum diam sem, tincidunt et eros ut, accumsan ultricies dolor. Donec lacinia vestibulum dui vitae lacinia. Nullam at fermentum nunc. Phasellus molestie in felis non pretium. Mauris nunc metus, sagittis vitae porttitor eget, maximus venenatis augue.</p>
+  </div>
+  <div class="tab-pane fade" id="me" role="tabpanel" aria-labelledby="profile-tab">
+   <img class="col-3 float-left curve" id="personal-img" src="/img/eu.png" alt="minha foto">
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel urna nibh. Morbi at gravida nulla. Aliquam nibh ligula, dapibus sed nulla eget, feugiat lacinia velit. Praesent et felis magna. Nulla facilisis turpis non dui tincidunt commodo vel et lectus. Aliquam tincidunt, tellus vitae congue congue, dui purus dictum ex, non laoreet velit mi vitae massa. Phasellus ullamcorper mi elit, rhoncus porta risus imperdiet sed.</p>
+   <p class="mb-5">Integer ac nulla aliquet massa pellentesque pellentesque dictum in risus. Praesent sit amet suscipit quam. Sed feugiat quam in ex cursus pretium. Praesent nulla neque, consequat rhoncus metus non, pellentesque efficitur arcu. Vivamus euismod interdum venenatis. Vestibulum diam sem, tincidunt et eros ut, accumsan ultricies dolor. Donec lacinia vestibulum dui vitae lacinia. Nullam at fermentum nunc. Phasellus molestie in felis non pretium. Mauris nunc metus, sagittis vitae porttitor eget, maximus venenatis augue.</p>
+  </div>
+</div>
